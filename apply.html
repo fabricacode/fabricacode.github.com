@@ -35,27 +35,44 @@
     <!-- For Google+ bidirectional linking -->
     <link href='https://plus.google.com/103695675753742819996' rel='publisher'>
     <script src="/javascripts/vendor/modernizr.js?1374156547" type="text/javascript"></script>
-    <link href="/stylesheets/site.css?1375973799" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/site.css?1379614870" media="screen" rel="stylesheet" type="text/css" />
     <script>
       var analytics=analytics||[];(function(){var e=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group"],t=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)analytics[e[n]]=t(e[n])})(),analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
       analytics.load("x954jcj75w");
     </script>
   </head>
   <body>
-    <div id='header-white'>
+    <div class='white' id='header'>
       <div class='center'>
-        <a class='black-icon' href='/' id='logo'></a>
-        <ul class='about-black' id='nav'>
-          <li>
-            <a href='http://store.fabrica.it'>Store</a>
-          </li>
-          <li>
-            <a href='/about.html'>About</a>
-          </li>
-          <li>
-            <a class='current' href='/apply.html'>Apply</a>
-          </li>
-        </ul>
+        <div id='menubg'></div>
+        <div id='options'>
+          <a class='menuclose-icon' href='javascript:toggleMenu();' id='menuclose'></a>
+          <ul>
+            <li>
+              <a class='menulink' href='/apply.html'>Apply</a>
+            </li>
+            <li>
+              <a class='menulink' href='/about.html'>About</a>
+            </li>
+            <!--
+              <li>
+                <a class='menulink current' href='/studios.html'>Studios</a>
+              </li>
+            -->
+            <li>
+              <a class='menulink' href='http://store.fabrica.it'>Store</a>
+            </li>
+          </ul>
+        </div>
+        <a class='homelink logo-icon' href='/' id='logo'></a>
+        <div id='menu'>
+          <!--
+            <div id='breadcrumb'>
+              &gt; Studios
+            </div>
+          -->
+          <a class='menuopen-icon' href='javascript:toggleMenu();' id='menuopen'></a>
+        </div>
       </div>
     </div>
     <div class='page'>
@@ -63,9 +80,26 @@
         Applications are accepted throughout the year.
       </h1>
       <hr class='primary'>
-      <p class='about'>
-        We are looking for interesting and interested people to become researchers at Fabrica. You might be a coder, graphic designer, musician, industrial designer, filmmaker, motion graphics artist, writer, illustrator, interaction designer, animator, some combination of these or even something else. You must be 25 years old or younger. Please see the Facebook pages for <a href="http://www.facebook.com/pages/Fabrica/48283858451">Fabrica</a> and <a href="http://www.facebook.com/colorsmagazine">Colors</a> for more information about the projects we are currently working on.
-      </p>
+      <div class='apply'>
+        <p class='about'>
+          We are looking for interesting and interested people to become researchers at Fabrica. You might be a coder, graphic designer, musician, industrial designer, filmmaker, motion graphics artist, writer, illustrator, interaction designer, animator, some combination of these or even something else. You must be 25 years old or younger. Please see the Facebook pages for <a href="http://www.facebook.com/pages/Fabrica/48283858451">Fabrica</a> and <a href="http://www.facebook.com/colorsmagazine">Colors</a> for more information about the projects we are currently working on.
+        </p>
+      </div>
+      <div class='handbookimg'>
+        <a href='files/fabricantihandbook.pdf' target='_blank'>
+          <img src='images/fabricantihandbook.jpeg' width='100%'>
+        </a>
+      </div>
+      <div class='handbook'>
+        <p class='about'>
+          <b>THE FABRICA HANDBOOK</b><br/>
+          <a href='files/fabricantihandbook.pdf' target='_blank'>
+            <b>Download PDF here</b><br/>
+          </a>
+          <br/>
+          (Due to the constantly evolving nature of Fabrica, the latest organizational structure may not be reflected in the handbook.)
+        </p>
+      </div>
       <hr class='primary'>
       <div class='form'>
         <div id='wufoo-m7x3z9'></div>
@@ -74,12 +108,12 @@
     <script>
       var m7x3z9;(function(d, t) {
       var s = d.createElement(t), options = {
-      'userName':'thankyouforyoursubmission', 
-      'formHash':'m7x3z9', 
+      'userName':'thankyouforyoursubmission',
+      'formHash':'m7x3z9',
       'autoResize':true,
       'height':'928',
       'async':true,
-      'header':'hide', 
+      'header':'hide',
       'ssl':false};
       s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
       s.onload = s.onreadystatechange = function() {
@@ -88,6 +122,7 @@
       var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
       })(document, 'script');
     </script>
-    <script src="/javascripts/other.js?1374156527" type="text/javascript"></script>
+    <script src="/javascripts/other.js?1379614864" type="text/javascript"></script>
+    <script src="/javascripts/menu.js?1379614861" type="text/javascript"></script>
   </body>
 </html>
